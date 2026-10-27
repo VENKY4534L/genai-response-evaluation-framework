@@ -1,0 +1,26 @@
+[
+  {
+    "id": "GENAI-001",
+    "question": "What should an assistant do when the supplied context does not contain the answer?",
+    "context": "The assistant must answer using only the supplied context. If the context does not contain the answer, it should clearly say the answer cannot be found in the context.",
+    "expected_answer": "Say the answer cannot be found in the context.",
+    "required_keywords": ["context", "cannot be found"],
+    "prompt_template": "Answer in one sentence using only this context. If the answer is absent, say so.\nContext: {context}\nQuestion: {question}"
+  },
+  {
+    "id": "GENAI-002",
+    "question": "What are two common ways to assess a generated response?",
+    "context": "Responses can be reviewed for relevance, consistency, factual correctness, completeness, and whether they follow instructions.",
+    "expected_answer": "Assess relevance and factual correctness.",
+    "required_keywords": ["relevance", "correctness"],
+    "prompt_template": "Answer briefly using only this context.\nContext: {context}\nQuestion: {question}"
+  },
+  {
+    "id": "GENAI-003",
+    "question": "Why should a test set include different prompts?",
+    "context": "Testing prompt variations helps identify changes in response quality, consistency, and instruction following.",
+    "expected_answer": "To compare response quality, consistency, and instruction following.",
+    "required_keywords": ["quality", "consistency"],
+    "prompt_template": "Answer briefly using only this context.\nContext: {context}\nQuestion: {question}"
+  }
+]
